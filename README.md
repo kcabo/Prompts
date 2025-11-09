@@ -6,6 +6,28 @@
 
 ※ `marketplace.json` では `"strict": false` と設定しているため、各スキル/コマンドに `plugin.json` は不要です。
 
+## 📥 インストール方法
+
+Claude Code を起動し、以下のコマンドを実行します：
+
+```bash
+# マーケットプレイスの追加
+/plugin marketplace add kcabo/Prompts
+
+# プラグインのインストール
+/plugin install utils@kcabo
+```
+
+### アップデート方法
+
+```bash
+# マーケットプレイスのリポジトリをローカルに再フェッチ
+/plugin marketplace update kcabo
+
+# 再インストール
+/plugin install utils@kcabo
+```
+
 ## 🗂️ ディレクトリ構造
 
 ```
