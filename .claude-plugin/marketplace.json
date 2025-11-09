@@ -9,7 +9,8 @@
       "name": "utils",
       "source": "./",
       "strict": false,
-      "skills": "./skills/"
+      "skills": "./skills/",
+      "commands": "./commands/"
     }
   ]
 }
