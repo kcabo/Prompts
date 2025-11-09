@@ -1,0 +1,19 @@
+{
+  "name": "kcabo",
+  "owner": {
+    "name": "kcabo"
+  },
+  "metadata": {
+    "description": "kcabo個人が管理するプラグインマーケットプレイス"
+  },
+  "plugins": [
+    {
+      "name": "auto-git",
+      "description": "gitコミットやプッシュなどの操作を支援するプラグイン",
+      "source": "./",
+      "license": "Apache-2.0",
+      "strict": false,
+      "skills": ["./skills/sample"]
+    }
+  ]
+}
