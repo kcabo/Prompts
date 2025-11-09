@@ -1,19 +1,15 @@
 {
   "name": "kcabo",
   "owner": {
-    "name": "kcabo"
-  },
-  "metadata": {
-    "description": "kcabo個人が管理するプラグインマーケットプレイス"
+    "name": "kcabo",
+    "email": "37576764+kcabo@users.noreply.github.com"
   },
   "plugins": [
     {
-      "name": "auto-git",
-      "description": "gitコミットやプッシュなどの操作を支援するプラグイン",
+      "name": "utils",
       "source": "./",
-      "license": "Apache-2.0",
       "strict": false,
-      "skills": ["./skills/sample"]
+      "skills": "./skills/"
     }
   ]
 }
