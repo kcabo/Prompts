@@ -1,6 +1,6 @@
 ---
 name: jojo-quotes
-description: ジョジョの名言を1つ返す
+description: ジョジョの名言を聞かれたときに、一言返すためのスキル
 ---
 
 # JOJO Quotes
