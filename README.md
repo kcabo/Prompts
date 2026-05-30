@@ -1,75 +1,10 @@
 # Personal Prompts
 
-このリポジトリは、Claude Code 等の生成 AI ツール で使用するカスタムプロンプト、スキル、コマンドを管理するための個人用プロジェクトです。
+個人用のプロンプトと Claude Code 用スキルを置くリポジトリです。
 
-このリポジトリは単一の `utils` プラグインとして構成されています。複数の機能を一つにまとめているのは、個別のバージョン管理の手間を減らしつつ、プラグインという配布単位を開発・運用時に意識せずに済むようにするためです。
+## Files
 
-※ `marketplace.json` では `"strict": false` と設定しているため、各スキル/コマンドに `plugin.json` は不要です。
+- `engineering.md`: エンジニアリング支援向けのシステムプロンプト
+- `CLAUDE.md`: Claude Code 向けの共通指示
+- `skills/gitmoji-commit/`: gitmoji 付きコミットメッセージ作成スキル
 
-システムプロンプトはリポジトリ直下に Markdown ファイルとして配置しています。
-
-## 📥 インストール方法
-
-Claude Code を起動し、以下のコマンドを実行します：
-
-```bash
-# マーケットプレイスの追加
-/plugin marketplace add kcabo/Prompts
-
-# プラグインのインストール
-/plugin install utils@kcabo
-```
-
-### アップデート方法
-
-```bash
-# マーケットプレイスのリポジトリをローカルに再フェッチ
-/plugin marketplace update kcabo
-
-# 再インストール
-/plugin install utils@kcabo
-```
-
-## 🗂️ ディレクトリ構造
-
-```
-.
-├── .claude-plugin/
-│   └── marketplace.json    # プラグインマーケットプレイス定義
-├── commands/           # Claude Code カスタムスラッシュコマンド
-├── skills/             # Claude エージェントスキル
-└── engineering.md      # エンジニアリング用システムプロンプト
-```
-
-## ✨ 機能一覧
-
-### `skills/gitmoji-commit`
-
-Git コミット時に変更内容を分析し、カスタム gitmoji ルールに従ってコミットメッセージを自動生成します。
-
-### `skills/weather`
-
-東京都の天気予報を取得して表示します。天気予報 API (weather.tsukumijima.net) を使用します。
-
-### `commands/jojo`
-
-ジョジョの奇妙な冒険シリーズから印象的な名言を 1 つ返します。使い方: `/utils:jojo`
-
-### `engineering.md`
-
-エンジニアリング支援向けの汎用システムプロンプトです。
-
-## 📚 参考リンク
-
-### Claude Code 公式ドキュメント
-
-- [プラグイン](https://code.claude.com/docs/ja/plugins)
-- [プラグインマーケットプレイス](https://code.claude.com/docs/ja/plugin-marketplaces)
-- [エージェントスキル](https://code.claude.com/docs/ja/skills)
-- [スラッシュコマンド](https://code.claude.com/docs/ja/slash-commands)
-- [プラグインリファレンス](https://code.claude.com/docs/ja/plugins-reference)
-
-### 機能関連
-
-- [Gitmoji](https://gitmoji.dev/)
-- [天気予報 API](https://weather.tsukumijima.net/)
